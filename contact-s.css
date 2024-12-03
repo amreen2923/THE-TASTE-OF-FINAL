@@ -1,0 +1,345 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color:#fff3e6;
+    font-family: 'Playfair Display';
+    color: #333;
+}
+
+.nav-content 
+{
+    width: 100%;
+    background-color: #fefae9;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    height: 13vh;
+    margin-bottom: 5px;
+}
+
+header 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo 
+{
+    width: 160px;
+    height: 10vh;
+}
+
+nav 
+{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar 
+{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+.n
+{
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-bar li:hover 
+{
+    color: #b55800;
+}
+
+.nav-bar a 
+{
+    text-decoration: none;
+}
+
+.main
+{
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 25vh;
+}
+.hamburger 
+{
+    display: none;
+    cursor: pointer;
+}
+
+.bar 
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 1s ease-out;
+    background-color: #ca5419;
+}
+footer 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fefae9;
+    color: black;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 43vh;
+}
+
+footer .subscribe-section 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+footer .subscribe-section h3 
+{
+    margin: 0;
+    font-size: 16px;
+    color: black;
+}
+
+footer .subscribe-section form 
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+footer .subscribe-section form input[type="email"] 
+{
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 500px;
+    color: #333;
+}
+
+footer .subscribe-section form button[type="submit"] 
+{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 6vh;
+}
+
+footer button[type="submit"]:hover 
+{
+    background-color: #b55800;
+}
+
+footer .socials-section 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+footer .socials-section h4 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+footer .socials 
+{
+    width: 30px;
+    height: 30px;
+}
+
+footer .socials-section p 
+{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+@media screen and (max-width:767px) 
+{
+    .logo 
+{
+  width: 90px;
+}
+  
+.nav-bar 
+{
+  list-style: none;
+  display: flex;
+  gap: 0.8em;
+}
+
+.n
+{
+  font-size: 1.3em;
+}
+
+footer
+{
+    justify-content: flex-start;
+    gap: 50%;
+}
+
+footer .subscribe-section h3
+{
+    font-size: 0.9rem;
+}
+
+footer .subscribe-section form
+{
+    width: 1vw;
+}
+
+footer .socials-section .socials
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+}
+    .logo 
+{
+  width: 90px;
+}
+
+.n
+{
+  font-size: 1.3em;
+}
+
+.n-contact
+{
+  font-size: 1.3em;
+}
+
+.nav-content
+{
+    margin-bottom: 0px;
+}
+
+.nav-bar
+{
+    display: block;
+}
+
+.nav-menu.active 
+{
+    left: 0;
+    padding: 10px;
+}
+
+.nav-link 
+{
+    padding: 3.2vw;
+}
+
+
+.hamburger 
+{
+    display: block;
+}
+
+.hamburger.active .bar:nth-child(2) 
+  {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) 
+  {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) 
+  {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu 
+  {
+    height: 50vh;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #fefae9;
+    width: 100%;
+    border: 6px solid #b55800;
+    text-align: center;
+    transition: 0.3s;
+    margin-top: 2vh;
+  }
+
+  .nav-item 
+  {
+    margin: 16px 0;
+  }
+form
+{
+    gap: 0px;
+}
+
+.button-container
+{
+    margin-top: 10px;
+}
+
+footer
+{
+    justify-content: flex-start;
+    gap: 50%;
+}
+
+footer .subscribe-section h3
+{
+    font-size: 0.9rem;
+}
+
+footer .subscribe-section form
+{
+    width: 1vw;
+}
+
+footer .socials-section .socials
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+}
+
+
+
+}

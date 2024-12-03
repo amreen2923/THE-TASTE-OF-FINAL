@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+    <div class="nav-content">
+        <header>
+          <img class="logo" src="svg/logo.svg" alt="logo" />
+          <nav>
+            <ul class="nav-bar nav-menu">
+               <a href="index.html"> <li class="n nav-link">Home</li> </a>
+               <a href="recipe.html"> <li class="n nav-link">Recipes</li> </a>
+               <a href="blog.html"> <li class="n-blog nav-link">Blog</li> </a>
+               <a href="gallery.html"> <li class="n nav-link">Visuals</li> </a>
+               <a href="inspiration.html"> <li class="n nav-link">Inspiration</li> </a>
+               <a href="contact.html"> <li class="n nav-link">Contact</li> </a>
+            </ul>
+
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+  
+          </nav>
+        </header>
+    </div>
+
+      <div class="parallax-blog" id="section1">
+        <div class="parallax">
+          <h1>WELCOME | 환영</h1>
+          <p>안녕하세요, 맛있는 김치전 레시피를 보시려면 아래로 스크롤하세요.</p>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="blog-video">
+          <iframe width="450" height="315" src="https://www.youtube.com/embed/91eEZZVjzuo?si=3AjVMLtixIpRimOS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="sub-content">
+          <h2>KIMCHIJEON</h2>
+          <p>Kimchiejeon, or kimchi pancakes, is a beloved Korean dish that combines fermented kimchi with a savoury batter of flour, water, and optional seasonings. This delightful treat is pan-fried until golden and crispy on the outside while remaining soft and flavorful. The bold, tangy taste of kimchi and the pancake's crisp texture make it a popular snack or appetizer. Often enjoyed as part of a meal or with makgeolli (Korean rice wine), kimchiejeon is both satisfying and simple to prepare. Variations can include additional ingredients like green onions, seafood, or thinly sliced vegetables, adding depth to its flavour. Kimchiejeon embodies the essence of Korean cuisine—comforting, flavorful, and versatile. It is not just a dish but a testament to the culinary creativity inspired by kimchi, a staple in Korean culture and tradition. Perfect for any occasion!</p>
+        </div>
+        </div>
+
+        <div class="description-section">
+          <div class="description">
+            <h3>Prep Time:</h3>
+            <p>10 mins</p>
+
+            <h3>Cook Time:</h3>
+            <p>15 mins</p>
+
+            <h3>Servings:</h3>
+            <p>2 - 4 People</p>
+
+            <h3>Nutrition Info:
+              <a href="#nutrition-info" class="scroll-arrow" onclick="highlightNutritionInfo()">↓</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="parallax-mid">
+          <div class="mid-section">
+            <h4>The Taste Of</h4>
+            <p>Scroll down for some BTS pictures.</p>
+            </div>
+        </div>
+        
+        
+      
+        <div class="carousel-container">
+          <div class="carousel-slide-wrapper">
+          <div class="carousel-slide">
+              <img src="IMAGES/BTS1.png" alt="Image 1">
+
+              <img src="IMAGES/BTS2.png" alt="Image 2">
+
+              <img src="IMAGES/BTS3.png" alt="Image 3">
+
+              <img src="IMAGES/BTS4.png" alt="Image 4">
+
+              <img src="IMAGES/BTS5.png" alt="Image 5">
+              
+              <img src="IMAGES/BTS6.png" alt="Image 6">
+
+              <img src="IMAGES/BTS7.png" alt="Image 7">
+
+              <img src="IMAGES/BTS8.png" alt="Image 8">
+              
+              <img src="IMAGES/BTS9.png" alt="Image 9">
+
+              <img src="IMAGES/BTS10.png" alt="Image 10">
+
+              <img src="IMAGES/BTS11.png" alt="Image 11">
+
+              <img src="IMAGES/BTS12.png" alt="Image 12">
+
+            </div>
+          </div>
+          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+      
+      <script src="blog.js"></script>
+
+      <div class="bs">
+      <div class="bottom-section">
+          <p>Kimchijeon, also known as kimchi pancake, is a popular Korean dish celebrated for its bold flavors and satisfying texture. Made primarily with kimchi, a traditional Korean fermented vegetable (often napa cabbage) mixed with spicy seasonings, this dish embodies the essence of Korean culinary traditions. Its origins are deeply rooted in Korean households as an easy way to use up older or extra-fermented kimchi, turning it into a savory, crispy treat.
+
+            To prepare kimchijeon, kimchi is mixed with a simple batter of flour and water, sometimes with the addition of starch for extra crispiness. The batter is often seasoned lightly since kimchi itself is packed with flavor. Many variations include additional ingredients such as sliced onions, scallions, or even seafood like squid or shrimp, enhancing its taste and texture. The mixture is then pan-fried to a golden-brown crispness, creating a dish that is both crunchy on the outside and soft on the inside.</p> <br>
+          
+          <div id="nutrition-info" tabindex="0">
+          <h5>Nutrition Info:</h5>
+          </div>
+          <p class="nutrition">
+            Calories: 200g,  Fat: 7g, Carbs: 28g, Sodium: 520mg, Protein: 5g & Fiber: 2g
+          </p>
+          <br>
+          <p>
+          In Korean culture, kimchijeon is a comfort food often shared during gatherings or rainy days, as the act of frying pancakes resonates with the cozy ambiance of wet weather. With its delightful blend of simplicity and flavor, kimchijeon remains a timeless staple in Korean cuisine, celebrated by food enthusiasts worldwide.
+        </p> <br>
+          <div class="buttons-section">
+            <button class="recipe-button" onclick="openPopup()">Recipe</button>
+          </div>
+    
+            <div class="popup" id="popup">
+              <div class="popup-content">
+                <button class="close-btn" onclick="closePopup()">X</button>
+
+                <img src="IMAGES/recipe.png" alt="">
+              <a href="recipe.html" class="more">For more recipes like this, Click here.</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <footer>
+
+        <div class="subscribe-section">
+        <h3>
+            Subscribe to Our Newsletter
+        </h3>
+        <form>
+            <input type="email" placeholder="Enter your email address" />
+            <button type="submit">Subscribe</button>
+        </form>
+        </div>
+      
+      
+        <div class="socials-section">
+            <h4>
+                <a href="https://www.instagram.com/accounts/login/"><img class="socials" src="IMAGES/Instagram.png" alt="Instagram"></a>
+        
+                <a href="https://accounts.snapchat.com/accounts/v2/login"><img class="socials" src="IMAGES/snapchat.png" alt="Snapchat"></a>
+        
+                <a href="https://twitter.com/i/flow/login"><img class="socials" src="IMAGES/twitter.png" alt="Twitter"></a>
+        
+                <a href="https://www.youtube.com/"><img class="socials" src="IMAGES/youtube.png" alt="Youtube"></a>
+            </h4>
+            <p>2024 The Taste Of. All rights reserved.</p>
+            </div>
+            
+      </footer>
+</body>
+</html>

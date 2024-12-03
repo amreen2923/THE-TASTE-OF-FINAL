@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5MHJJSVS");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="gallery.css" />
+  </head>
+
+  <body>
+    <div class="nav-content">
+      <header>
+        <nav class="navbar">
+          <img class="logo" src="svg/logo.svg" alt="" />
+          <ul class="nav-menu">
+            <li class="nav-items n">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-items n">
+              <a href="recipe.html" class="nav-link">Recipe</a>
+            </li>
+            <li class="nav-items n">
+              <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-items n">
+              <a href="gallery.html" class="nav-link n-gallery">Visuals</a>
+            </li>
+            <li class="nav-items n">
+              <a href="inspiration.html" class="nav-link">Inspiration</a>
+            </li>
+            <li class="nav-items n">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5MHJJSVS"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+
+    <h1 class="heading">Gallery</h1>
+    <div class="gallery">
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual1.jpg" alt="Image 1" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual2.jpg" alt="Image 2" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual3.jpg" alt="Image 3" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual4.jpg" alt="Image 4" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual5.jpg" alt="Image 5" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual6.jpg" alt="Image 6" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual7.jpg" alt="Image 7" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual8.jpg" alt="Image 8" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual9.jpg" alt="Image 9" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual10.jpg" alt="Image 10" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual11.jpg" alt="Image 11" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual12.jpg" alt="Image 12" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual13.jpg" alt="Image 13" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual4.jpg" alt="Image 14" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual15.jpg" alt="Image 15" />
+      </div>
+      <div class="gallery-item scroll-animation">
+        <img src="IMAGES/visual16.jpg" alt="Image 16" />
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modal-img" />
+      <div id="modal-caption"></div>
+    </div>
+    <footer>
+      <div class="subscribe-section">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Enter your email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="socials-section">
+        <h4>
+          <a href="https://www.instagram.com/accounts/login/"
+            ><img class="socials" src="IMAGES/Instagram.png" alt="Instagram"
+          /></a>
+
+          <a href="https://accounts.snapchat.com/accounts/v2/login"
+            ><img class="socials" src="IMAGES/snapchat.png" alt="Snapchat"
+          /></a>
+
+          <a href="https://twitter.com/i/flow/login"
+            ><img class="socials" src="IMAGES/twitter.png" alt="Twitter"
+          /></a>
+
+          <a href="https://www.youtube.com/"
+            ><img class="socials" src="IMAGES/youtube.png" alt="Youtube"
+          /></a>
+        </h4>
+        <p>2024 The Taste Of. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
