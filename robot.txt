@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /contact-s.html/
+Disallow: /contatc.html/
+Allow: /blog.html/
+Allow: /gallery.html/
+Allow: /index.html/
+Allow: /inspiration.html/
+Allow: /recipe.html/
