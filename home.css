@@ -12,8 +12,7 @@ body {
   align-items: center;
   background-color: #fefae9;
 }
-.nav-content 
-{
+.nav-content {
   width: 100%;
   background-color: #fefae9;
   padding: 20px 0;
@@ -41,7 +40,6 @@ body {
   transition: color 0.3s;
   color: #b55800;
 }
-
 
 li {
   list-style: none;
@@ -142,26 +140,27 @@ footer .subscribe-section {
 footer .subscribe-section h3 {
   margin: 0;
   font-size: 16px;
-  color: #333;
+  color: black;
 }
 
 footer .subscribe-section form {
   display: flex;
+  flex-direction: row;
   gap: 10px;
 }
 
-footer input[type="email"] {
+footer .subscribe-section form input[type="email"] {
   padding: 10px;
   font-size: 14px;
-  border: 1px solid #d97f00;
+  border: 1px solid black;
   border-radius: 4px;
   width: 200px;
   color: #333;
 }
 
-footer button[type="submit"] {
-  padding: 10px 15px;
-  background-color: #d97f00;
+footer .subscribe-section form button[type="submit"] {
+  padding: 10px;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 4px;
@@ -184,6 +183,9 @@ footer .socials-section {
 
 footer .socials-section h4 {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
 }
 
@@ -197,6 +199,7 @@ footer .socials-section p {
   font-size: 14px;
   color: #333;
 }
+
 .container_sec_2 {
   max-width: 1200px;
   margin: 0 auto;
@@ -265,13 +268,11 @@ footer .socials-section p {
     padding: 0 15px;
   }
 
-  .n 
-  {
+  .n {
     font-size: 0.5em;
   }
 
-  .n-home
-  {
+  .n-home {
     font-size: 0.7em;
   }
 
@@ -433,26 +434,33 @@ footer .socials-section p {
 }
 @media (max-width: 480px) {
   footer {
-    width: 100%;
-    display: block;
-    align-items: center;
-  }
-  .subscribe-section {
-    width: 4vw;
-    font-size: 1em;
-    margin-left: 8vw;
-  }
-  .subscribe-section form input {
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50%;
   }
   footer .subscribe-section h3 {
-    text-align: center;
-    margin-left: 28vw;
-    font-size: 5vw;
+    font-size: 0.9rem;
   }
-  footer .socials-section {
+
+  footer .subscribe-section form {
+    width: 1vw;
     display: flex;
+    flex-direction: column;
+  }
+  footer .subscribe-section form input[type="email"] {
+    width: 65vw;
+    padding: 2vw;
     align-items: center;
-    margin-top: 3vh;
+  }
+  footer .subscribe-section form button[type="submit"] {
+    width: fit-content;
+    padding: 2vw;
+    margin: 2vw;
+  }
+  footer .socials-section .socials {
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
   }
 }
